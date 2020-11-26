@@ -6,7 +6,9 @@ token=os.environ['PLUS_KEY']
 plant1=os.environ['PLANT1']
 fruit1=os.environ['FRUIT1']
 pet1=os.environ['PET1']
-def jd_subscribe(plant_code,fruit_code,pet_code):
+ddfac1=os.environ['DDFAC1']
+jxfac1=os.environ['JXFAC1']
+def jd_subscribe(plant_code,fruit_code,pet_code,ddf_code,jxf_code):
     try:
         # 模拟浏览器打开网站
         chrome_options = Options()
@@ -17,11 +19,17 @@ def jd_subscribe(plant_code,fruit_code,pet_code):
         plant_code_url = "http://api.turinglabs.net/api/v1/jd/bean/create/"+str(plant_code)+"/"
         fruit_code_url = "http://api.turinglabs.net/api/v1/jd/farm/create/"+str(fruit_code)+"/"
         pet_code_url = "http://api.turinglabs.net/api/v1/jd/pet/create/"+str(pet_code)+"/"
+        ddf_code_url = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/"+str(ddf_code)+"/"
+        jxf_code_url = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/"+str(jxf_code)+"/"
         driver.get(plant_code_url)
         driver.implicitly_wait(100)
         driver.get(fruit_code_url)
         driver.implicitly_wait(100)
         driver.get(pet_code_url)
+        driver.implicitly_wait(100)
+        driver.get(ddf_code_url)
+        driver.implicitly_wait(100)
+        driver.get(jxf_code_url)
     except:
         driver.quit()
         print("上车失败!")
@@ -37,4 +45,4 @@ def jd_subscribe(plant_code,fruit_code,pet_code):
         url = 'https://sc.ftqq.com/'+token+'.send?text='+title+'&desp='+content
         requests.get(url)
 if __name__ == "__main__":
-   jd_subscribe(plant1,fruit1,pet1)
+   jd_subscribe(plant1,fruit1,pet1,ddfac1,jxfac1)
