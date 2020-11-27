@@ -22,17 +22,17 @@ Defalt_jxShareCode = ['rg5PyZyZiAvO9g7SHMJphQ==', 'V_sRKLFbOoUEPBvg5G9DpQ==']
 
 
 def AddhelpCode(Url, Defalt_ShareCode):
-    for code, token in Defalt_ShareCode, tokens:
+    for i, code in enumerate(Defalt_ShareCode):
         try:
             AddcodeRes = hongliyu(Url + code + '/')
             print(AddcodeRes)
 
             if AddcodeRes['code'] == 200:
-                notify(token, "互助码:" + code + "添加成功✅")
+                notify(tokens[i], "互助码:" + code + "添加成功✅")
             elif AddcodeRes['code'] == 400:
-                notify(token, "互助码:" + code + "已存在")
+                notify(tokens[i], "互助码:" + code + "已存在")
             else:
-                notify(token, "互助码:" + code + "添加异常")
+                notify(tokens[i], "互助码:" + code + "添加异常")
         except Exception as e:
             pass
 
