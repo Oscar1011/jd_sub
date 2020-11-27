@@ -7,8 +7,8 @@ token = os.environ['PLUS_KEY']
 plant1 = os.environ['PLANT1']
 fruit1 = os.environ['FRUIT1']
 pet1 = os.environ['PET1']
-ddfac1 = os.environ['DD_FAC1']
-jxfac1 = os.environ['JX_FAC1']
+ddfac1 = os.environ['DDFAC1']
+jxfac1 = os.environ['JXFAC1']
 
 
 def jd_subscribe(plant_code, fruit_code, pet_code, ddf_code, jxf_code):
