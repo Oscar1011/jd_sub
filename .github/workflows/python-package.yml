@@ -34,9 +34,10 @@ jobs:
         - name: '提交数据'
           env: 
               PLUS_KEY: ${{ secrets.PLUS_KEY }}
+              PLUS_KEY2: ${{ secrets.PLUS_KEY2 }}
               PLANT1 : ${{ secrets.PLANT1 }}
               FRUIT1 : ${{ secrets.FRUIT1 }}
               PET1 : ${{ secrets.PET1 }}
               DDFAC1 : ${{ secrets.DDFAC1 }}
               JXFAC1 : ${{ secrets.JXFAC1 }}
-          run: python3 main.py
+          run: python3 main2.py
