@@ -14,11 +14,11 @@ token1 = os.environ['PLUS_KEY']
 token2 = os.environ['PLUS_KEY2']
 tokens = [token1, token2]
 
-Defalt_ncShareCode = ['f362373e1dee41e0857a6cb4834af992', '2b032e4bbc3d4ab38346d8e7e224fddd']
-Defalt_mcShareCode = ['MTAxODc2NTEzNTAwMDAwMDAyMDE5MzUzNQ==', 'MTAxODc2NTEzNTAwMDAwMDAyMDE1NDIyNw==']
-Defalt_zdShareCode = ['mlrdw3aw26j3xfouimthxb26gr53v4mg7y4seji', 'lhubofhlunfaui45unikiowyx4']
-Defalt_ddShareCode = ['P04z54XCjVWnYaS5m9cZ2Wq2C5Mw1YsO47pBdM', 'P04z54XCjVWnYaS5n1RWT-rhTkCzA']
-Defalt_jxShareCode = ['rg5PyZyZiAvO9g7SHMJphQ==', 'V_sRKLFbOoUEPBvg5G9DpQ==']
+Defalt_ncShareCode = ['f362373e1dee41e0857a6cb4834af992', '18a804a19d58474e98d5a5490e8f91a3']
+Defalt_mcShareCode = ['MTAxODc2NTEzNTAwMDAwMDAyMDE5MzUzNQ==', 'MTEzMzI0OTE0NTAwMDAwMDA0MTc4OTM3OQ==']
+Defalt_zdShareCode = ['mlrdw3aw26j3xfouimthxb26gr53v4mg7y4seji', 'iq4paoebhftxidofiue6rcrqbxvakewvs3qidqi']
+Defalt_ddShareCode = ['P04z54XCjVWnYaS5m9cZ2Wq2C5Mw1YsO47pBdM', 'P04z54XCjVWnYaS5nJcdiixtC8o6eKmuBkMtQ']
+Defalt_jxShareCode = ['rg5PyZyZiAvO9g7SHMJphQ==', 'SDXbeYAJc51IGPh1AwkP8A==']
 
 
 def AddhelpCode(Url, Defalt_ShareCode):
