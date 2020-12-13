@@ -12,13 +12,22 @@ jxurl = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/"
 
 token1 = os.environ['PLUS_KEY']
 token2 = os.environ['PLUS_KEY2']
-tokens = [token1, token2]
+tokens = [token1, token2, token1]
 
-Defalt_ncShareCode = ['f362373e1dee41e0857a6cb4834af992', '18a804a19d58474e98d5a5490e8f91a3']
-Defalt_mcShareCode = ['MTAxODc2NTEzNTAwMDAwMDAyMDE5MzUzNQ==', 'MTEzMzI0OTE0NTAwMDAwMDA0MTc4OTM3OQ==']
-Defalt_zdShareCode = ['mlrdw3aw26j3xfouimthxb26gr53v4mg7y4seji', 'iq4paoebhftxidofiue6rcrqbxvakewvs3qidqi']
-Defalt_ddShareCode = ['P04z54XCjVWnYaS5m9cZ2Wq2C5Mw1YsO47pBdM', 'P04z54XCjVWnYaS5nJcdiixtC8o6eKmuBkMtQ']
-Defalt_jxShareCode = ['rg5PyZyZiAvO9g7SHMJphQ==', 'SDXbeYAJc51IGPh1AwkP8A==']
+Defalt_ncShareCode = ['f362373e1dee41e0857a6cb4834af992',
+                      '18a804a19d58474e98d5a5490e8f91a3',
+                      'b261337d06e74b1098f616141a0547dd']
+Defalt_mcShareCode = ['MTAxODc2NTEzNTAwMDAwMDAyMDE5MzUzNQ==',
+                      'MTEzMzI0OTE0NTAwMDAwMDA0MTc4OTM3OQ==']
+Defalt_zdShareCode = ['mlrdw3aw26j3xfouimthxb26gr53v4mg7y4seji',
+                      'iq4paoebhftxidofiue6rcrqbxvakewvs3qidqi',
+                      'sbtpzthpn5duja6ati5zl4psmorhk3o73cuza5y']
+Defalt_ddShareCode = ['P04z54XCjVWnYaS5m9cZ2Wq2C5Mw1YsO47pBdM',
+                      'P04z54XCjVWnYaS5nJcdiixtC8o6eKmuBkMtQ',
+                      'P04z54XCjVWnYaS5nJccwqkqAE914H_MlaA']
+Defalt_jxShareCode = ['rg5PyZyZiAvO9g7SHMJphQ==',
+                      'SDXbeYAJc51IGPh1AwkP8A==',
+                      'T7AgoLvxsm5bJX_1zJXoWQ==']
 
 
 def AddhelpCode(Url, Defalt_ShareCode):
@@ -52,7 +61,6 @@ def notify(token, content):
         requests.get(url)
     except Exception as e:
         print('''发送通知:''', str(e))
-
 
 
 AddhelpCode(mcUrl, Defalt_mcShareCode)
