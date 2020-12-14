@@ -38,11 +38,11 @@ def AddhelpCode(Url, Defalt_ShareCode):
             print(AddcodeRes)
 
             if AddcodeRes['code'] == 200:
-                notify(tokens[i], "互助码:" + code + "添加成功✅")
+                notify(tokens[i], "互助码添加成功✅", "互助码:" + code + "添加成功✅")
             elif AddcodeRes['code'] == 400:
-                notify(tokens[i], "互助码:" + code + "已存在")
+                notify(tokens[i], "互助码已存在", "互助码:" + code + "已存在")
             else:
-                notify(tokens[i], "互助码:" + code + "添加异常")
+                notify(tokens[i], "互助码添加异常", "互助码:" + code + "添加异常")
         except Exception as e:
             pass
 
@@ -54,10 +54,10 @@ def hongliyu(url):
         print('''初始化函数:''', str(e))
 
 
-def notify(token, content):
+def notify(token, title, content):
     try:
         print(content)
-        title = '京东互助上车执行情况'
+        #title = '京东互助上车执行情况'
         url = 'https://sc.ftqq.com/' + token + '.send?text=' + title + '&desp=' + content
         requests.get(url)
     except Exception as e:
