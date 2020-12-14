@@ -18,7 +18,8 @@ Defalt_ncShareCode = ['f362373e1dee41e0857a6cb4834af992',
                       '18a804a19d58474e98d5a5490e8f91a3',
                       'b261337d06e74b1098f616141a0547dd']
 Defalt_mcShareCode = ['MTAxODc2NTEzNTAwMDAwMDAyMDE5MzUzNQ==',
-                      'MTEzMzI0OTE0NTAwMDAwMDA0MTc4OTM3OQ==']
+                      'MTEzMzI0OTE0NTAwMDAwMDA0MTc4OTM3OQ==',
+                      'MTE1NDUwMTI0MDAwMDAwMDQyNTAwMTA5']
 Defalt_zdShareCode = ['mlrdw3aw26j3xfouimthxb26gr53v4mg7y4seji',
                       'iq4paoebhftxidofiue6rcrqbxvakewvs3qidqi',
                       'sbtpzthpn5duja6ati5zl4psmorhk3o73cuza5y']
