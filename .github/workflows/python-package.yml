@@ -3,7 +3,6 @@ name: '上京东互助群的车'
 on:
   watch:
     types: started
-  push:
   schedule:
     - cron: '5 0 1,10,20 * *'
 jobs:
