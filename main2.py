@@ -10,6 +10,7 @@ mcUrl = 'http://api.turinglabs.net/api/v1/jd/pet/create/'
 ddurl = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/"
 jxurl = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/"
 jdzzurl = "https://code.chiang.fun/api/v1/jd/jdzz/create/"
+cjurl = "https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/"
 
 token1 = os.environ['PLUS_KEY']
 token2 = os.environ['PLUS_KEY2']
@@ -34,6 +35,10 @@ Defalt_jxShareCode = ['rg5PyZyZiAvO9g7SHMJphQ==',
 Defalt_jdzzShareCode = ['S5KkcRUwcp1KBKEunl6ZbIA'
                        '',
                        'S-akIKkJsiCOVf3OR_K0']
+
+Defalt_cjShareCode = ['-V-of4DIBNqgZ3jAaTv5h6t9zd5YaBeE'
+                       '',
+                       'uraPKu7mEbeNLQJlCeS4Hg==']
 
 def AddhelpCode(Url, Defalt_ShareCode):
     for i, code in enumerate(Defalt_ShareCode):
@@ -76,3 +81,4 @@ AddhelpCode(zdUrl, Defalt_zdShareCode)
 AddhelpCode(ddurl, Defalt_ddShareCode)
 AddhelpCode(jxurl, Defalt_jxShareCode)
 AddhelpCode(jdzzurl, Defalt_jdzzShareCode)
+AddhelpCode(cjurl, Defalt_cjShareCode)
