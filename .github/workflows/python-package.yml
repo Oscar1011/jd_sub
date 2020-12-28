@@ -1,6 +1,7 @@
 name: '上京东互助群的车'
 
 on:
+  workflow_dispatch:
   watch:
     types: started
   schedule:
