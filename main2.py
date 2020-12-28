@@ -31,11 +31,15 @@ Defalt_jxShareCode = ['rg5PyZyZiAvO9g7SHMJphQ==',
                       'SDXbeYAJc51IGPh1AwkP8A==',
                       'T7AgoLvxsm5bJX_1zJXoWQ==']
 
-Defalt_jdzzShareCode = ['S5KkcRUwcp1KBKEunl6ZbIA']
+Defalt_jdzzShareCode = ['S5KkcRUwcp1KBKEunl6ZbIA'
+                       '',
+                       'S-akIKkJsiCOVf3OR_K0']
 
 def AddhelpCode(Url, Defalt_ShareCode):
     for i, code in enumerate(Defalt_ShareCode):
         try:
+            if code == '':
+                continue
             AddcodeRes = hongliyu(Url + code + '/')
             print(AddcodeRes)
 
